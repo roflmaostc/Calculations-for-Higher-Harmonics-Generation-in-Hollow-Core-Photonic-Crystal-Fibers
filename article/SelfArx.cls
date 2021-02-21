@@ -58,10 +58,10 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage[
-	left=2cm,
-	right=2cm,
-	top=2.0cm,
-	bottom=2.0cm,
+	left=2.05cm,
+	right=2.05cm,
+	top=2.2cm,
+	bottom=2.2cm,
 	headheight=10pt,
 	letterpaper,
 ]{geometry}
