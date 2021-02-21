@@ -31,14 +31,16 @@ function main()
         p = 5.1
         p2 = 0.1
         res11 = (n(λ, p, e11) - n(λ/3, p, e11)) * 10^4
-        res110 = (n(λ, p, e11) - n(λ/3, p, e11)) * 10^4
+        res11_lp = (n(λ, p2, e11) - n(λ/3, p2, e11)) * 10^4
         res12 = (n(λ, p, e11) - n(λ/3, p, e12)) * 10^4
         res13 = (n(λ, p, e11) - n(λ/3, p, e13)) * 10^4
         res23 = (n(λ, p, e11) - n(λ/3, p, e23)) * 10^4
         res33 = (n(λ, p, e11) - n(λ/3, p, e33)) * 10^4
         res43 = (n(λ, p, e11) - n(λ/3, p, e43)) * 10^4
         write(io, "$(λ*10^9) \t $res11 \t $res12 \t $res13 \t $res23 \t $res33 \t $res43 \n")
+        write(io_lp, "$(λ*10^9) \t $res11_lp\n")
     end
     close(io)
+    close(io_lp)
 end
 main()
