@@ -1,6 +1,7 @@
 function main()
     
     io = open("argon.txt", "w");
+    io_lp = open("argon_low_pressure.txt", "w");
 
     B1 = 20332.29e-8 
     B2 = 34458.31e-8 
@@ -28,7 +29,9 @@ function main()
 
     for λ in λs
         p = 5.1
+        p2 = 0.1
         res11 = (n(λ, p, e11) - n(λ/3, p, e11)) * 10^4
+        res110 = (n(λ, p, e11) - n(λ/3, p, e11)) * 10^4
         res12 = (n(λ, p, e11) - n(λ/3, p, e12)) * 10^4
         res13 = (n(λ, p, e11) - n(λ/3, p, e13)) * 10^4
         res23 = (n(λ, p, e11) - n(λ/3, p, e23)) * 10^4
