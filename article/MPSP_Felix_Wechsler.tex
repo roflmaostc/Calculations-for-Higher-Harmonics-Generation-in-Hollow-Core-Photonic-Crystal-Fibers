@@ -97,7 +97,7 @@
         k^{mn} = \sqrt{(n k_0)^2 - \left( \frac{u_{mn}}{a}\right)^2}
     \end{align}
     where $n$ is the refractive index of the medium.
-    From the wave number we obtain the effective wavelength
+    From the wave number we obtain the effective refractive index 
     \begin{align}
         n^{mn} = \sqrt{n^2 - \left( \frac{u_{mn}}{a k_0}\right)^2}.
         \label{eq:mode}
@@ -125,7 +125,7 @@
 
     \section{Phase Matching}
     In third harmonics generation, two fundamental conditions need to hold: energy and momentum conservation. 
-    In the wave picture, momentum conservation is a phase matching condition and can be expressed in the fiber mode as
+    In the wave picture, momentum conservation is a phase matching condition and can be in the fiber mode expressed as
     \begin{align}
         \mathbf{k}^{mn} = 3 \cdot \mathbf k^{11} 
     \end{align}
@@ -171,14 +171,14 @@
         \caption{Refractive index difference of \ce{Ar} for different \text{HE} modes and $\text{HE}_{11}$ at $T=\SI{293}{\kelvin}$, $p=\SI{5000}{\milli\bar}$.}
         \label{plt:pm}
     \end{figure}
-    From \autoref{plt:pm} it follows that intra-modal phase matching ($nm = 01$) is not possible since the $\text{HE}_{11}$ curve does not reach values where the refractive index difference is approximately 0.
+    From \autoref{plt:pm} it follows that intra-modal phase matching ($nm = 11$) is not possible since the $\text{HE}_{11}$ curve does not reach values where the refractive index difference is approximately 0.
     Even, at a low pressure of $p=\SI{100}{\milli\bar}$ the dotted blue line does not reach 0. 
     Also mathematically it is clear that \eqref{eq:pm} cannot be solved for intra-modal phase matching because the only variable is $\lambda$ and since $n(\lambda)$ is a monotonic decreasing function, there is no solution for $\lambda$ and $\lambda/3$. 
     However, $\text{HE}_{13}$ has a solution to the phase matching condition identifiable at $\lambda=\SI{800}{\nano\meter}$.
     Mathematically, $\lambda/3$ leads to a decrease in \eqref{eq:pm} which is then compensated by an increase of $u^{03}>u^{01}$.\\
     Instead of using \ce{Ar}-filled HC-PCF, third harmonics can be generated with \ce{Kr} as well. 
     Using the Sellmeier coefficients for \ce{Kr}, we apply the phase matching condition to 
-    graphically solve for the required pressure.
+    solve for the required pressure.
     \begin{figure}[h]
         \centering
         \begin{tikzpicture}
@@ -204,7 +204,7 @@
         \caption{Refractive index difference of \ce{Kr} for different \text{HE} modes and $\text{HE}_{11}$ at $T=\SI{293}{\kelvin}$,  $\lambda=\SI{800}{\nano\meter}$.}
         \label{plt:pressure}
     \end{figure}
-    In \autoref{plt:pressure} we see that for $p^{13}=\SI{2.4}{\bar}$, $p^{23}=\SI{5.3}{\bar}$ and $p^{33}=\SI{8.5}{\bar}$ the phase matching is fulfilled. 
+    In \autoref{plt:pressure} we can see that for $p^{13}=\SI{2.4}{\bar}$, $p^{23}=\SI{5.3}{\bar}$ and $p^{33}=\SI{8.5}{\bar}$ the phase matching is fulfilled. 
 \section{\ce{Xe}-filled HC-PCF}
     \autoref{plt:pmxenon} shows the refractive index difference for a \ce{Xe}-filled HC-PCF\footnote{Note, there is a typo in \cite{Borzsonyi2008}. $C_1$ should be \SI{12.75e-3}{\micro\meter\squared} instead of \SI{12.75e-6}{\micro\meter\squared}. See \url{https://refractiveindex.info/?shelf=main&book=Xe&page=Borzsonyi}}.
     \begin{figure}[h]
@@ -243,7 +243,7 @@
     The reason for the lower pressure is that \ce{Xe} has the largest dispersion \cite{Borzsonyi2008} leading to a smaller $p$ needed to compensate for the larger $u^{mn}$ in \eqref{eq:pm}.
     Consequently \ce{Ar} shows the lowest dispersion.
     It is worth to mention that the opportunity to use different gases enhances the use in practical applications of higher harmonics generation with HC-PCFs. 
-    \ce{Xe} and \ce{Ar} allow to vary the presssure by one order of magnitude but still generating third harmonics. Also, the linear pressure dependency in the phase matching condition
+    \ce{Xe} and \ce{Ar} allow to vary the presssure by almost one order of magnitude but still generating third harmonics. Also, the linear pressure dependency in the phase matching condition
     allows to fine-tune efficiently for certain higher order modes.
     Furthermore, combining \eqref{eq1a} together with the ideal gas law, gas-filled HC-PCFs are robust against temperature induced pressure variations. For moderate gas chamber dimensions temperature changes due to absorption of radiation are negligible \cite{Serebryannikov2004}.
     In conclusion, noble gas-filled HC-PCFs allow for setups to be small, nonhazardous and insensitive to environmental changes and are therefore 
